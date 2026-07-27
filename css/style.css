@@ -354,9 +354,12 @@ li.has-dropdown.open .dropdown { opacity: 1; visibility: visible; transform: tra
   margin-bottom: 1.8rem;
 }
 @media (min-width: 641px) {
+  .hero { align-items: center; }
+  .hero-content { padding-bottom: 0; }
   .hero-content h1 { font-size: 2rem; max-width: 340px; }
   .hero-sub { font-size: 1rem; max-width: 300px; }
 }
+
 .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 2rem; }
 .hero-badges { display: flex; gap: 12px; flex-wrap: wrap; }
 .badge-pill {
@@ -803,3 +806,7 @@ li.has-dropdown.open .dropdown { opacity: 1; visibility: visible; transform: tra
 }
 .drawer-backdrop.open { opacity: 1; visibility: visible; }
 body.no-scroll { overflow: hidden; }
+
+@media (min-width: 641px) {
+  .scroll-hint { display: none; }
+}
