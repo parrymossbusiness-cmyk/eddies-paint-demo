@@ -165,8 +165,9 @@ section { padding: 5.5rem 0; }
   gap: 14px;
 }
 .brand-icon { width: 64px; height: 64px; flex-shrink: 0; }
-.brand-logo-img { width: auto; height: 84px; object-fit: contain; }
-@media (max-width: 900px) { .brand-logo-img { height: 60px; } }
+.brand-logo-img { width: auto; height: 84px; max-width: none; object-fit: contain; flex-shrink: 0; }
+@media (max-width: 900px) { img.brand-logo-img { height: 68px; width: auto; } }
+@media (max-width: 640px) { img.brand-logo-img { height: 80px; width: auto; } }
 .brand-icon .drip { fill: var(--accent); }
 .brand-icon .brush-body { fill: var(--accent); }
 .brand-icon .brush-outline { stroke: var(--white); }
@@ -371,6 +372,14 @@ li.has-dropdown.open .dropdown { opacity: 1; visibility: visible; transform: tra
 }
 .badge-pill .stars { color: var(--gold); letter-spacing: 1px; }
 .badge-pill .google-g { flex-shrink: 0; }
+.badge-plain {
+  background: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+}
 .hero-scroll {
   position: absolute;
   bottom: 28px; left: 50%;
@@ -719,7 +728,12 @@ li.has-dropdown.open .dropdown { opacity: 1; visibility: visible; transform: tra
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 860px) {
-  .nav-links, .nav-right .nav-phone-text, .nav-right .btn-accent { display: none; }
+  .nav-links, .nav-right .btn-accent { display: none; }
+  .site-header nav[aria-label="Primary"] { display: none; }
+  .nav-inner { gap: 12px; }
+  .nav-phone svg { display: none; }
+  .nav-phone { flex-direction: row-reverse; }
+  .nav-phone-text { font-size: .82rem; }
   .nav-toggle { display: flex; align-items: center; justify-content: center; }
   .nav-right { gap: 14px; }
   .form-row { grid-template-columns: 1fr; }
@@ -744,7 +758,7 @@ li.has-dropdown.open .dropdown { opacity: 1; visibility: visible; transform: tra
   .hero-ctas { margin-top: auto; padding-top: 28px; margin-bottom: 1rem; }
   .brand-word { font-size: 1.05rem; }
   .brand-word span { font-size: .55rem; }
-  .brand-icon { width: 50px; height: 50px; }
+  .brand-icon:not(.brand-logo-img) { width: 50px; height: 50px; }
   .page-header { padding: 150px 0 60px; }
 }
 
