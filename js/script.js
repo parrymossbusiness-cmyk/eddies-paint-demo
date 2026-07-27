@@ -1,4 +1,4 @@
-/* All Metro Painting — site interactions */
+/* Eddie's Painting — site interactions */
 document.addEventListener('DOMContentLoaded', function () {
 
   /* ---------- Sticky nav shrink / solidify ---------- */

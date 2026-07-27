@@ -1,5 +1,5 @@
 /* ==========================================================================
-   All Metro Painting — core stylesheet
+   Eddie's Painting — core stylesheet
    ========================================================================== */
 
 :root {
@@ -165,6 +165,8 @@ section { padding: 5.5rem 0; }
   gap: 14px;
 }
 .brand-icon { width: 64px; height: 64px; flex-shrink: 0; }
+.brand-logo-img { width: auto; height: 84px; object-fit: contain; }
+@media (max-width: 900px) { .brand-logo-img { height: 60px; } }
 .brand-icon .drip { fill: var(--accent); }
 .brand-icon .brush-body { fill: var(--accent); }
 .brand-icon .brush-outline { stroke: var(--white); }
