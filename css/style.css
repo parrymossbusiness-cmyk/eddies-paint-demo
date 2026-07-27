@@ -353,6 +353,10 @@ li.has-dropdown.open .dropdown { opacity: 1; visibility: visible; transform: tra
   max-width: 640px;
   margin-bottom: 1.8rem;
 }
+@media (min-width: 641px) {
+  .hero-content h1 { font-size: 2rem; max-width: 340px; }
+  .hero-sub { font-size: 1rem; max-width: 300px; }
+}
 .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 2rem; }
 .hero-badges { display: flex; gap: 12px; flex-wrap: wrap; }
 .badge-pill {
@@ -457,6 +461,18 @@ li.has-dropdown.open .dropdown { opacity: 1; visibility: visible; transform: tra
   transition: background .2s ease;
 }
 .review-controls button:hover { background: rgba(255,255,255,.15); }
+.scroll-hint {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 14px;
+  color: var(--gold);
+  font-size: .85rem;
+  font-weight: 600;
+  font-family: var(--font-head);
+}
+.scroll-hint svg { width: 16px; height: 16px; }
 
 /* ==========================================================================
    Services grid
