@@ -504,6 +504,8 @@ li.has-dropdown.open .dropdown { opacity: 1; visibility: visible; transform: tra
    Before / After gallery
    ========================================================================== */
 .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.gallery-grid figure { margin: 0; }
+@media (min-width: 1025px) { .gallery-grid-2col { grid-template-columns: repeat(2, 1fr); max-width: 760px; margin: 0 auto; } }
 .ba-slider {
   position: relative;
   border-radius: var(--radius);
